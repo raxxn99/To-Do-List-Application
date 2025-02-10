@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#taskForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskTitle {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li.completed {
+  background-color: #d4edda;
+  text-decoration: line-through;
+}
+
+#taskList li .taskActions {
+  display: flex;
+  gap: 10px;
+}
+
+#taskList li .taskActions button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+#taskList li .taskActions .editBtn {
+  background-color: #ffc107;
+}
+
+#taskList li .taskActions .editBtn:hover {
+  background-color: #e0a800;
+}
+
+#taskList li .taskActions .deleteBtn {
+  background-color: #dc3545;
+}
+
+#taskList li .taskActions .deleteBtn:hover {
+  background-color: #c82333;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
